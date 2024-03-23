@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "/home/tofi/proyects/astrodb-lucia",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "extends": "astro/tsconfigs/strict"
+}

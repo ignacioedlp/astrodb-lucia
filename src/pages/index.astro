@@ -1,0 +1,14 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+const user = Astro.locals.user;
+---
+
+<MainLayout title="Home">
+    {
+      user && (
+        <form action="/api/signout" method="post">
+          <button type="submit">Logout</button>
+        </form>
+      )
+    }
+</MainLayout>

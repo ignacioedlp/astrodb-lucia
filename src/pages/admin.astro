@@ -1,0 +1,12 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+const user = Astro.locals.user;
+
+if (!user) {
+  return Astro.redirect("/signin");
+}
+---
+
+<MainLayout title="Dashboard">
+  <h1>Welcome back, {user.username}!</h1>
+</MainLayout>
